@@ -77,7 +77,9 @@ const About = {
           nativeOnClick={this.nativeClickHandler}
           onChildPipe={this.childPipe}
           onChildPipe1={this.childPipe1}
-        />
+        >
+          this is child
+        </Child>
         <Comp scopedSlots={scopedSlots}></Comp>
         <div>----------------------------</div>
         <Comp

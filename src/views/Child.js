@@ -2,6 +2,7 @@ const Child = {
   data() {
     return {};
   },
+  functional: true,
   methods: {
     childPipe(e) {
       alert("child click pipe to parent");
@@ -9,8 +10,7 @@ const Child = {
       this.$emit("childPipe");
     }
   },
-  render() {
-    // const { $emit } = this;
+  render(h, { children, listeners }) {
     return (
       <div>
         <div
@@ -18,11 +18,11 @@ const Child = {
           //     e.stopPropagation();
           //     this.childPipe();
           //   }}
-          onClick={this.childPipe}
+          onClick={listeners.childPipe}
         >
-          this is child
+          this is child com
         </div>
-        {/* <div onClick={$emit("onChildPipe1")}>this is child2</div> */}
+        <div>{children}</div>
       </div>
     );
   }
