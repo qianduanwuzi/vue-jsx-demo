@@ -20,7 +20,7 @@ const Child = {
           //   }}
           onClick={listeners.childPipe}
         >
-          this is child com
+          this is child's com
         </div>
         <div>{children}</div>
       </div>
