@@ -13,6 +13,7 @@ const Comp = {
     }
   },
   render() {
+    this.name = "老王after";
     const HelloWorld = ({ props }) => <p>hello {props.name} -name</p>;
     const { title } = this.$slots;
     const { name, age } = this;

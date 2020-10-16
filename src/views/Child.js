@@ -2,6 +2,12 @@ const Child = {
   data() {
     return {};
   },
+  props: {
+    opt: {
+      default: () => [],
+      type: Array
+    }
+  },
   functional: true,
   methods: {
     childPipe(e) {
@@ -10,7 +16,7 @@ const Child = {
       this.$emit("childPipe");
     }
   },
-  render(h, { children, listeners }) {
+  render(h, { children, listeners, props }) {
     return (
       <div>
         <div
@@ -23,6 +29,13 @@ const Child = {
           this is child's com
         </div>
         <div>{children}</div>
+        <div>
+          测试opt
+          {props.opt}
+          {props.opt.map(item => {
+            <div>{item.name}</div>;
+          })}
+        </div>
       </div>
     );
   }

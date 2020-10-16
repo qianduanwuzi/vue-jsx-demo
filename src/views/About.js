@@ -7,7 +7,8 @@ const About = {
     return {
       test: "1111",
       isShow: false,
-      tabValue: ""
+      tabValue: "",
+      arr: []
     };
   },
   methods: {
@@ -59,8 +60,12 @@ const About = {
       age: 27
     };
     const tab = [{ name: "tab1" }, { name: "tab2" }];
+    this.arr = [1, 2, 3];
     return (
       <div title={test}>
+        {this.arr.map(item => (
+          <div>{item}</div>
+        ))}
         <SelfCom tab={tab} vModel={this.tabValue}></SelfCom>
         {this.tabValue}
         <div onClick={() => this.$refs.child.childPipe()}>
@@ -73,6 +78,7 @@ const About = {
           <div>{item.name}</div>
         ))}
         <Child
+          opt={[{ name: 111111111 }]}
           ref="child"
           nativeOnClick={this.nativeClickHandler}
           onChildPipe={this.childPipe}

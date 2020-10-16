@@ -24,6 +24,18 @@ const routes = [
     path: "/ant",
     name: "Ant",
     component: () => import(/* webpackChunkName: "about" */ "../views/Ant.js")
+  },
+  {
+    path: "/observable",
+    name: "Observable",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/observable/parent")
+  },
+  {
+    path: "/detail",
+    name: "Detail",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/observable/detail")
   }
 ];
 
