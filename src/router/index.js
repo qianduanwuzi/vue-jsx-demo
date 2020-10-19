@@ -15,11 +15,11 @@ const routes = [
     name: "About",
     component: () => import(/* webpackChunkName: "about" */ "../views/About.js")
   },
-  {
-    path: "/test",
-    name: "Test",
-    component: () => import(/* webpackChunkName: "about" */ "../views/Test.js")
-  },
+  // {
+  //   path: "/test",
+  //   name: "Test",
+  //   component: () => import(/* webpackChunkName: "about" */ "../views/Test.js")
+  // },
   {
     path: "/ant",
     name: "Ant",
