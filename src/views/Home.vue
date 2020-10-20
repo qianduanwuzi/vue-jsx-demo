@@ -1,12 +1,14 @@
 <template>
-  <div class="home"></div>
+  <div class="home">
+    home
+    <WZTest text="this is text1"></WZTest>
+  </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
+// import { WZTest } from "wuzi-package";
 export default {
-  name: "Home",
-  components: {}
+  name: "Home"
+  // components: { WZTest }
 };
 </script>

@@ -2,6 +2,7 @@ import Child from "./Child";
 import Comp from "./Comp";
 import FunCon from "./FunCom";
 import SelfCom from "./SelfCom";
+import { WZTestJsx } from "wuzi-package";
 const About = {
   data() {
     return {
@@ -63,6 +64,7 @@ const About = {
     this.arr = [1, 2, 3];
     return (
       <div title={test}>
+        <WZTestJsx />
         {this.arr.map(item => (
           <div>{item}</div>
         ))}
