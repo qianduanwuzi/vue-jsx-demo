@@ -3,8 +3,9 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 Vue.config.productionTip = false;
-import WZUI from "wuzi-package";
-Vue.use(WZUI);
+import * as WZUI from "wuzi-package";
+console.log(WZUI.default);
+Vue.use(WZUI.default);
 new Vue({
   router,
   store,

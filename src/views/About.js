@@ -2,7 +2,8 @@ import Child from "./Child";
 import Comp from "./Comp";
 import FunCon from "./FunCom";
 import SelfCom from "./SelfCom";
-import { WZTestJsx } from "wuzi-package";
+// import { default } from "wuzi-package";
+// console.log(default);
 const About = {
   data() {
     return {
@@ -88,6 +89,7 @@ const About = {
         >
           this is child
         </Child>
+        <div>==========================</div>
         <Comp scopedSlots={scopedSlots}></Comp>
         <div>----------------------------</div>
         <Comp
@@ -97,7 +99,10 @@ const About = {
             scopedSlots: {
               test: ({ user }) => (
                 <div style={{ color: "red" }}>{user.username}</div>
-              )
+              ),
+              test1: {
+                show: () => <div>this is show</div>
+              }
             }
           }}
         >

@@ -32,6 +32,7 @@ const Comp = {
         {this.$scopedSlots.test({
           user: { username: "陈楠" }
         })}
+        {this.$scopedSlots.test1.show()}
         <div>end---</div>
       </div>
     );
