@@ -2,8 +2,8 @@ import Child from "./Child";
 import Comp from "./Comp";
 import FunCon from "./FunCom";
 import SelfCom from "./SelfCom";
-// import { default } from "wuzi-package";
-// console.log(default);
+// import { WZTestJsx } from "wuzi-package";
+// console.log(WZTestJsx);
 const About = {
   data() {
     return {

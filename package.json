@@ -51,7 +51,7 @@
     "vue-styleguidist": "^4.32.2",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.44.1",
-    "wuzi-package": "^0.6.0"
+    "wuzi-package": "^0.6.7"
   },
   "config": {
     "commitizen": {
